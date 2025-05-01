@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tablo_formlarım</title>
+    <script src="tablo_form.js"></script>
+    <link rel="stylesheet" href="tablo_form.css">
+
+</body>
+</html>
+
 </head>
 <body>
-    <form name="kayit" action="kayit.aspx" method="get">
+  <form name="kayit" action="tablo_form2.html" method="get">
         <h1>ÜYE KAYIT FORMU</h1>
         <p>Üye Kayıt Formunu Doldurmanızı Rica ederiz..</p>
         <table >
-            <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" id="email" required></td></tr> 
-            <tr><td>TCKN</td><td><input type="text" name="tckn" id="tckn" required minlength="11" maxlength="11"></td></tr>
-            <tr><td>Email:</td><td><input type="email" name="email" id="email" required></td></tr>
-            <tr><td>Yaşınız:</td><td><input type="number" name="yasiniz" id="yasiniz" required min="0"></td></tr>
-            <tr><td>Ülke</td><td><input type="text" name="ulke" id="ulke" required></td></tr>
+            <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" id="email" required autofocus placeholder="Ad soyad bilgisini giriniz.."></td></tr> 
+            <tr><td>TCKN</td><td><input type="text" name="tckn" id="tckn" required minlength="11" maxlength="11" placeholder="TCKN bilgisini giriniz.."></td></tr>
+            <tr><td>Email:</td><td><input type="email" name="email" id="email" required placeholder="Email'inizi giriniz.."></td></tr>
+            <tr><td>Yaşınız:</td><td><input type="number" name="yasiniz" id="yasiniz" required min="0" placeholder="Yaşınızı giriniz.."></td></tr>
             <tr>
+              <td>Ülke</td>
+              <td>
+                <select name="ulke" id="ulke" required>
+                  <option value="">Ülke Seçiniz</option>
+                </select>
+              </td>
+            </tr>
+            
                 <td>Cinsiyetiniz</td>
                 <td>
                   <select name="cinsiyet" id="cinsiyet" required>
@@ -25,10 +38,19 @@
                   </select>
                 </td>
               </tr>
+              <tr>
+                <td><input type="checkbox" name="elektronik_izin" id="elektronik_izin" required></td>
+                <td>
+                  Tarafıma elektronik ileti gönderilmesini kabul ediyorum.
+                  Bilgilendirme, tanıtım, kampanya ve promosyon amaçlı SMS, e-posta veya arama yoluyla tarafıma ulaşılmasına onay veriyorum.
+                </td>
+              </tr>
+              
               
             <tr><td></td><td><input type="submit" value="GÖNDER"><input type="reset" value="TEMİZLE"></td></tr>
         </table>
 
     </form>
+    
 </body>
 </html>

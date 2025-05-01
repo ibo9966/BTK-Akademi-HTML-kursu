@@ -1,0 +1,146 @@
+/* Genel ayarlar */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #2c3e50;
+}
+
+/* Form kutusu */
+form {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Başlık */
+form h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #34495e;
+  text-align: center;
+}
+
+form p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+/* Tablo düzeni */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* Input ve Select stilleri */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Placeholder rengi */
+::placeholder {
+  color: #95a5a6;
+}
+
+/* Butonlar */
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+input[type="reset"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #c0392b;
+}
+
+/* Geri Dön Butonu (Ana Sayfaya Dön) */
+.back-button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #27ae60;
+}
+
+.warning-message {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  animation: fadeIn 0.4s ease-in-out;
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

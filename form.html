@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Üye Kayıt Formu</h1>
+    <form name="kayit" action="kayit.php" method="get">
+        Ad Soyad: <input type="text" name="adsoyad" id="idadsoyad"
+        size="20" maxlength="30" required >
+        <br>
+        Email: <input type="email" name="email" id="email" required>
+        <br>
+        Web Sitesi : <input type="url" name="adres" id="adres" >
+        <br>
+        Yaşınız: <input type="number" name="yas" id="yas" min="0" required>
+        <br>
+        <label for="gender">Cinsiyet:</label>
+            <select id="gender" name="gender">
+            <option value="male">Erkek</option>
+            <option value="female">Kadın</option>
+            <option value="other">Diğer</option>
+            </select>
+            <br><br><br>
+        <input type="submit" value="GÖNDER">
+        <input type="reset" value="TEMİZLE">
+    </form>
+</body>
+</html>

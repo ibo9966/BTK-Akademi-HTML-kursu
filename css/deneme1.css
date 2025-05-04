@@ -1,0 +1,20 @@
+.anabaslik{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ortabaslık{
+    text-align: center;
+    color: blue;
+    font-size: 30px; 
+}
+li{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+image{
+    width: 200px;
+}

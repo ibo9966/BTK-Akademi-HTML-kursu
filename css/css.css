@@ -1,0 +1,60 @@
+.anabaslik{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ortabaslık{
+    text-align: center;
+    color: blue;
+    font-size: 20px; 
+}
+li{
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+img{
+    width: 150px;
+}
+
+#genel_foto {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.character {
+    margin-bottom: 30px;
+}
+
+.content-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content-row img {
+    width: 150px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.content-row p {
+    margin: 0;
+    max-width: 1500px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.sayfa_gecisleri{
+ 
+    text-align: center;
+    font-weight: bold;
+}

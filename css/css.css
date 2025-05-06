@@ -58,3 +58,203 @@ p {
     text-align: center;
     font-weight: bold;
 }
+
+.iletisim_anabaslik{
+    text-align: center;
+    color: blue;
+    }
+
+.forum_anabaslik{
+    text-align: center;
+    color: #2e7d32;
+    font-style: italic;
+
+
+}
+
+
+#tablo1 {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+}
+
+#tablo1 td {
+    color: darkblue;
+    font-weight: bold;
+    border: 1px solid #666;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+#tablo2 {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #e8f5e9;
+    border: 2px dashed #4caf50;
+}
+
+#tablo2 td {
+    color: #2e7d32;
+    font-style: italic;
+    border: 1px dashed #81c784;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+#iletisim_telefon,
+#iletisim_adres,
+#iletisim_konum {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ana form kutusu */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+.container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Etiketler */
+.container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Metin giriş alanları */
+#isim,
+#email,
+#yorum {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box
+}
+
+.yorumlar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+.yorum-karti {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    border-left: 6px solid #4caf50;
+}
+
+.yorum-karti:hover {
+    transform: translateY(-3px);
+}
+
+.yorum-karti h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.yorum-karti p {
+    margin: 0 0 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.yorum-karti .puan {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+#karakterGorsel {
+    display: none;
+    margin: 30px auto;
+    max-width: 80%;
+    width: 400px;
+    height: auto;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#karakterGorsel.show {
+    display: block;
+    opacity: 0.8;
+}
+
+.geri-buton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.geri-buton:hover {
+    background-color: #2c80b4;
+}

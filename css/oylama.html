@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oylama Sayfası</title>
     <link rel="stylesheet" href="css.css">
+    <script src="oylama.js"></script>
+
+    
 </head>
 <body>
+    <a href="anasayfa.html" class="geri-buton">← Geri</a>
+
     <h1 class="anabaslik">Oylama Sayfası</h1>
     <h2 class="ortabaslık">Sevdiğin Süper Kahramanlar</h2>
     <br>
@@ -31,28 +36,28 @@
     <label for="hawkeye">Hawkeye</label>
 
     <h2 class="ortabaslık">En güçlü Olduğunu Düşündüğü Süper Kahraman</h2>
-    <br>
-    <br>
-    <input type="radio" name="secim">
-    <label for="ironman">Iron Man</label>
-<br>
-    <input type="radio" name="secim">
-    <label for="captain_america">Captain Amerika</label>
-<br>
-    <input type="radio" name="secim">
-    <label for="thor">Thor</label>
-<br>
-
-    <input type="radio" name="secim">
-    <label for="hulk">Hulk</label>
-<br>
-    <input type="radio" name="secim">
-    <label for="black-widow">Black Widow</label>
-<br>
-    <input type="radio" name="secim">
-    <label for="hawkeye">Hawkeye</label>
-
-
+    <br><br>
+    <input type="radio" name="secim" value="ıron_man" onchange="gorselGoster(this.value)">
+    <label>Iron Man</label><br>
+    
+    <input type="radio" name="secim" value="captain_america" onchange="gorselGoster(this.value)">
+    <label>Captain Amerika</label><br>
+    
+    <input type="radio" name="secim" value="thor" onchange="gorselGoster(this.value)">
+    <label>Thor</label><br>
+    
+    <input type="radio" name="secim" value="Hulk" onchange="gorselGoster(this.value)">
+    <label>Hulk</label><br>
+    
+    <input type="radio" name="secim" value="black-widow" onchange="gorselGoster(this.value)">
+    <label>Black Widow</label><br>
+    
+    <input type="radio" name="secim" value="hawkeye" onchange="gorselGoster(this.value)">
+    <label>Hawkeye</label><br>
+    
+    <!-- Görsel kutusu -->
+    <img id="karakterGorsel" src="" alt="Kahraman Görseli" style="display:none; margin-top:20px; width:200px;">
+    
 
     
 </body>

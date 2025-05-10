@@ -1,0 +1,151 @@
+/*CSS Dosyası*/
+
+/*Boşlukları sıfırla*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#sayfa{
+    width: 400px;
+    min-height: 600px;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+    background-color: black;
+    
+}
+
+/*Banner*/
+#banner{
+    width: 398px;
+    min-height: 100px;
+    border-style: dotted;
+    border-width: 1px;
+    margin: auto;
+    background-color: white;
+}
+
+/*logo*/
+#logo{
+    width: 100px;
+    min-height: 80px;
+    border-style: none;
+    border-width: 1px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    float: left;
+    
+ 
+
+}
+
+#logo img {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+/*sosyal medya ikonları*/
+#sosyal {
+    width: 150px;
+    height: 40px;
+    border: 1px none;
+    background-color: white;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 10px;
+
+    display: flex;
+    justify-content: space-evenly; /* eşit boşluk */
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#sosyal img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/*Anamenu*/
+#anamenu{
+    width: 398px;
+    height: 50px;
+    border-style: dotted;
+    border-width: 1px;
+    margin: auto;
+    background-color: deepskyblue;
+    
+
+}
+#anamenu ul{
+    list-style-type: none;
+
+}
+
+#anamenu ul li{
+    width: 80px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: blue;
+    background-color: white;
+    float: left;
+    padding: 3px;
+    margin-left: 5px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+
+
+}
+
+
+
+#anamenu ul a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#anamenu ul a:link{
+    color: blue;
+}
+
+#anamenu ul a:visited{
+    color: brown;
+}
+
+#anamenu ul a:hover{
+    color:gray;
+    text-decoration: underline;
+
+}
+
+#anamenu ul a:active{
+    color: red;
+}
+
+/*içerik ve yanmenu kodları*/
+
+#icerik{
+    width: 300px;
+    height: 400px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: white;
+    float: left;
+}
+#yanmenu{
+    width: 96px;
+    min-height: 400px;
+    border-style: dotted;
+    border-width: 1px;
+    background-color: royalblue;
+    float: left; 
+}
